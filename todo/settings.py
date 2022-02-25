@@ -23,16 +23,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'r2*q)qf+z%(za^bsv!=ouoatxb=z)#lh6so=npaj25-ozcr9!u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
-    '8850-122-161-53-41.ngrok.io',
+    'djngo2do.herokuapp.com'
     'localhost'
 ]
 
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8850-122-161-53-41.ngrok.io',
+    'https://djngo2do.herokuapp.com/',
     'http://localhost:8000'
 ]
 
