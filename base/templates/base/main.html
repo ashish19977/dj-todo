@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+  <title>Todo List</title>
+  <style>
+    
+    body{
+      background-color: #25262C;
+      display: grid !important;
+      place-items: center;
+      margin: 0px;
+      height: 100vh;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+      color: #FF9D7E;
+    }
+
+    a,p{
+      color: #FF9D7E;
+    }
+
+    .main_container{
+      font-family: 'Nunito', sans-serif;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 1px 1px 5px;
+      max-width: 60%;
+      box-sizing: border-box;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .main_container {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+      }
+      }
+
+    .header_bar{
+      display: flex;
+      justify-content: space-between;
+      color: #FF9D7E;
+      padding: 10px;
+      border-radius: 5px 5px 0 0;
+      background-color: #9C2702;
+    }
+
+    .header_bar a{
+        color: #FF9D7E;
+        text-decoration: none;
+      }
+
+    .task_wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      border-top: 1px solid #FF9D7E;
+    }
+
+    .task_title{
+      display: flex;
+      align-items: center;
+    }
+
+    .task_title a{
+      text-decoration: none;
+    }
+
+    .task_title .title_text{
+      margin-left: 10px;
+      max-width: 88%;
+    }
+
+    .task_completed_icon{
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background-color: white;
+    }
+
+    .task_incompleted_icon{
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background-color: #9C2702;
+    }
+
+    .delete_link{
+      text-decoration: none;
+      color: #9C2702;
+      font-size: 2rem;
+    }
+
+    .search_add_wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    #add_link{
+      text-decoration: none;
+      font-size: 2rem;
+      padding: 0 7px;
+    }
+
+    input[type=text], input[type=password], textarea{
+      border: 1px solid #FF9D7E;
+      border-radius: 5px;
+      padding: 10px;
+      width: 90%;
+    }
+
+    label{
+      padding-top: 10px !important;
+      color: #FF9D7E;
+      display: block;
+    }
+
+    .btn{
+      border: 1px solid #9C2702;
+      background-color: #FF9D7E;
+      color: #9C2702;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+
+    .form_card{
+      padding: 10px;
+    }
+
+    .back_icon{
+      font-weight: 1100;
+    }
+
+    .hello_wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .sticky_search{
+      position: sticky;
+      top: 0;
+      background-color: #25262C;
+      padding-top: 5px;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="main_container">
+
+    {% block content %}
+    {% endblock content %}
+
+  </div>
+
+</body>
+</html>

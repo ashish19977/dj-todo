@@ -1,0 +1,25 @@
+{% extends 'base/main.html' %}
+
+{% block content %}
+
+
+  
+  <div class="header_bar">  
+    <h1>Login</h1>
+  </div>
+
+  <div class="form_card">
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input class="btn" type="submit" value="Login">
+    </form>
+  
+    <h3>
+      Dont have an account yet?
+      <a href="{% url 'register' %}">Register</a>
+    </h3>
+  </div>
+
+{% endblock content %}
+
