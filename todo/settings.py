@@ -26,8 +26,9 @@ SECRET_KEY = 'r2*q)qf+z%(za^bsv!=ouoatxb=z)#lh6so=npaj25-ozcr9!u'
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'djngo2do.herokuapp.com'
-    'localhost'
+    'djngo2do.herokuapp.com',
+    'localhost',
+    '*'
 ]
 
 
